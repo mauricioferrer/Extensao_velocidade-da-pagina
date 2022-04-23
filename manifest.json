@@ -1,0 +1,27 @@
+{
+    "manifest_version":2,
+    "name":"Auto Scroll",
+    "version":"0.1",
+    "icons": {
+        "16":"./icon_16.png",
+        "24":"./icon_24.png"
+    },
+    
+    "content_scripts":[
+        {
+            "matches":[
+                "<all_urls>"
+            ],
+            "js":[
+                "./content.js"
+            ]
+        }
+    ],
+    "browser_action":{
+        "default_icon":"./icon.png",
+        "default_popup":"./popup.html"
+    },
+    "permissions": [
+        "activeTab"
+    ]
+}
